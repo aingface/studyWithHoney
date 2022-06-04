@@ -30,7 +30,7 @@ for cell in stringfyWalletCells:
     title = soup.find("title").text
 
     # 지갑 주소에 해당하는 텍스트 불러오기
-    if "(Invalid Address)" in title:
+    if "Invalid Address" in title:
         print("owner:%s isInvalid" % (owner))
     else:
         print("owner:%s is Valid" % (owner))
